@@ -15,6 +15,7 @@ class FlatsController < ApplicationController
   def create
     @flat = Flat.new(flat_params)
     @flat.save
+    redirect_to flats_path
   end
 
   def edit
@@ -22,6 +23,7 @@ class FlatsController < ApplicationController
 
   def update
     @flat.update(flat_params)
+
     redirect_to flat_path(@flat)
   end
 
