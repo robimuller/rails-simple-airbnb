@@ -1,0 +1,12 @@
+<%= simple_form_for(@flat) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :description %>
+  <%= f.input :price_per_night %>
+  <%= f.input :number_of_guests %>
+  <%= f.submit class: "btn btn-primary"%>
+<% end %>
+<br>
+<%= link_to root_path, class: "btn btn-secondary" do %>
+  <i class="fas fa-undo-alt"> Back to flats</i>
+<% end %>
